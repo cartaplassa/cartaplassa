@@ -1,0 +1,79 @@
+.btn {
+    position: relative;
+    display: inline-block;
+    padding: .5rem 1rem;
+    text-decoration: none;
+    color: inherit;
+    border: 1px solid var(--accent-color);
+    font-weight: 400;
+
+    overflow: hidden;
+    border-radius: .5rem;
+
+    &:focus {
+        outline: none;
+    }
+
+    &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 100%;
+        background: white;
+        height: 100%;
+        z-index: -1;
+        transition: all 0.2s cubic-bezier(1, 0.68, 0.16, 0.9);
+    }
+
+    &:hover::after,
+    &:focus::after {
+        right: 0;
+        background: var(--accent-color);
+    }
+
+    &--accent {
+        background: var(--accent-color);
+        transition: all 0.2s;
+    
+        &::after {
+            display: none;
+        }
+    
+        &:hover,
+        &:focus {
+            background: transparent;
+        }
+    }
+
+    &--underlined {
+        border: none;
+        border-bottom: 1px solid var(--accent-color);
+        border-radius: 0;
+        transition: all 0.2s;
+
+        &::after {
+            content: "";
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 100%;
+            background: white;
+            height: 100%;
+            z-index: -1;
+            transition: all 0.2s cubic-bezier(1, 0.68, 0.16, 0.9);
+          }
+          
+          &:focus {
+            outline: none;
+          }
+          
+          &:hover::after,
+          &:focus:after {
+            right: 0;
+            background: var(--accent-color);
+          }
+    }
+}

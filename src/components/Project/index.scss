@@ -1,0 +1,51 @@
+@import "react-image-gallery/styles/scss/image-gallery.scss";
+
+.project {
+    display: flex;
+    flex-direction: column;
+
+    @media (min-width: 1180px) {
+        flex-direction: row;
+        justify-content: space-between;
+
+        &__summary {
+            flex: 0 0 30%
+        }
+
+        &__img {
+            flex: 0 0 60%
+        }
+    }
+
+    &:not(:last-child) {
+        margin-bottom: 10rem;
+    }
+
+    &__summary {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__title {
+        text-align: center;
+    }
+
+    &__features {
+        display: flex;
+        padding: .5em;
+        gap: .5em;
+        flex-wrap: wrap;
+
+        @media (min-width: 1180px) {
+            flex-direction: column;
+            align-items: start;
+        }
+    }
+
+    &__desc {
+        margin: .5em 0 1em;
+        @media (min-width: 1180px) {
+            flex-grow: 1;
+        }
+    }
+}

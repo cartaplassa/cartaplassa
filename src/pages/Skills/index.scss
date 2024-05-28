@@ -1,0 +1,55 @@
+@use "sass:map";
+
+.skills {
+    display: grid;
+    justify-items: center;
+    gap: 1em;
+    grid-template-columns: repeat(2, 1fr);
+
+    @media (min-width: 400px) {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    @media (min-width: 750px) {
+        grid-template-columns: repeat(6, 1fr);
+    }
+}
+
+$logo-colors: (
+    "react": rgba(97, 218, 251, .8),
+    "pwa": rgba(145, 18, 255, 1),
+    "ts": rgba(49, 120, 198, .5),
+    "python": rgba(51, 119, 187, .8),
+    "linux": rgba(253, 253, 251, .4),
+    "docker": rgba(13, 183, 237, .8),
+);
+
+.skills__logo {
+    height: 5em;
+
+    @each $logo, $color in $logo-colors {
+        &--#{$logo}:hover {
+            filter:drop-shadow(0 0 2em $color);
+        }
+    }
+
+    &--python:hover {
+        filter:drop-shadow(-1.5em -1.5em 2em rgba(51, 119, 187, .6))
+               drop-shadow(1.5em 1.5em 2em rgba(255, 187, 51, .3));
+    }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .skills__logo--spin {
+      animation: logo-spin infinite 9s linear;
+    }
+}
+  
+@keyframes logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+}

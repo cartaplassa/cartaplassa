@@ -1,0 +1,33 @@
+@use "sass:map";
+
+$colors: (
+    "python": #3377bb,
+    "telegram": #21a6e4,
+    "react": #00d8ff,
+    "typescript": #3178c6,
+    "chakraui": #319795,
+    "pwa": #5a0fc8,
+    "chrome": #7ea4d6,
+    "firefox": #ff6624
+);
+
+.feature {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: .25em;
+    border-radius: 1em;
+    padding: 0 .5em 0 .25em;
+    @each $feature, $color in $colors {
+        &--#{$feature} {
+            border: 1px solid $color;
+            color: $color;
+
+            &:hover {
+                background-color: $color;
+                color: black;
+            }
+        }
+    }
+    transition: all 0.2s;
+}
