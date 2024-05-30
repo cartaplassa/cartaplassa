@@ -1,5 +1,8 @@
 .header {
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)), url("./header.jpg");
+  background: linear-gradient(
+    rgba(0, 0, 0, 0.6), 
+    rgba(0, 0, 0, 0.4)
+  ), url("./header.jpg");
   height: 100vh;
   background-size: cover;
   background-position: center;
@@ -15,6 +18,7 @@
 .navbar {
   display: flex;
   flex-direction: column;
+  align-items: flex-end;
   // justify-content: space-around;
   padding: 1em;
 

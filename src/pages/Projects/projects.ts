@@ -39,7 +39,7 @@ const projects: ProjectType[] = [
     {
         title: 'Pleenum',
         desc: 'Telegram chat-managing bot, that helps you create subgroups inside chats with main feature of letting you mention all members of subgroup with a single command.',
-        features: ['Python', 'Telegram'],
+        features: ['Python', 'Telegram', 'SQLAlchemy', 'SQLite'],
         img: pleenumImage,
         links: {
             source: "https://github.com/cartaplassa/pleenum"

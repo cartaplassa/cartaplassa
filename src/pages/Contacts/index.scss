@@ -1,0 +1,16 @@
+.contacts {
+    &__text {
+        margin-bottom: 2em;
+    }
+
+    &__buttons {
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+        align-items: flex-start;
+
+        @media (min-width: 775px) {
+            flex-direction: row;
+        }
+    }
+}

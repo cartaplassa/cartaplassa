@@ -1,3 +1,5 @@
+@use "sass:map";
+
 .btn {
     position: relative;
     display: inline-block;
@@ -33,20 +35,6 @@
         background: var(--accent-color);
     }
 
-    &--accent {
-        background: var(--accent-color);
-        transition: all 0.2s;
-    
-        &::after {
-            display: none;
-        }
-    
-        &:hover,
-        &:focus {
-            background: transparent;
-        }
-    }
-
     &--underlined {
         border: none;
         border-bottom: 1px solid var(--accent-color);
@@ -71,9 +59,44 @@
           }
           
           &:hover::after,
-          &:focus:after {
+          &:focus::after {
             right: 0;
             background: var(--accent-color);
           }
+    }
+
+    &--accent {
+        background: var(--accent-color);
+        transition: all 0.2s;
+    
+        &::after {
+            display: none;
+        }
+    
+        &:hover,
+        &:focus {
+            background: transparent;
+        }
+    }
+
+    $colors: (
+        "whatsapp": #25D366,
+        "matrix": white
+    );
+
+    @each $brand, $color in $colors {
+        &--#{$brand} {
+            border-color: $color;
+            color: $color;
+            &:focus,
+            &:hover {
+                color: black;
+            }
+            &:hover::after,
+            &:focus::after {
+              right: 0;
+              background: $color;
+            }
+        }
     }
 }

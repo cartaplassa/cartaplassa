@@ -7,16 +7,16 @@ import { IoChatbubblesOutline } from "react-icons/io5";
 const Navbar = () => {
   return (
     <nav className="navbar wrapper">
-      <a className="navbar__link" href="">
+      <a className="navbar__link" href="#skills">
         Skills
       </a>
-      <a className="navbar__link" href="">
+      <a className="navbar__link" href="#projects">
         Projects
       </a>
-      <a className="navbar__link" href="">
+      <a className="navbar__link" href="#about">
         About
       </a>
-      <a className="navbar__link" href="">
+      <a className="navbar__link" href="#contacts">
         Contacts
       </a>
     </nav>
@@ -25,7 +25,7 @@ const Navbar = () => {
 
 const Header = () => {
   return (
-    <header className="header">
+    <div className="header">
       <Navbar />
       <div className="header__intro-wrapper wrapper">
         <div className="header__intro">
@@ -34,7 +34,7 @@ const Header = () => {
           <CustomButton link='#contacts'><IoChatbubblesOutline /> DM me :3</CustomButton>
         </div>
       </div>
-    </header>
+    </div>
   );
 };
 

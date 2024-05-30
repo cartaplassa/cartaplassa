@@ -23,7 +23,10 @@ function Project(props: ProjectType) {
                 </div>
                 <p className="project__desc">{props.desc}</p>
                 <div className="project__links">
-                    <CustomButton link={props.links.source}>
+                    <CustomButton
+                        link={props.links.source}
+                        className='project__source'
+                    >
                         <FaGithub /> Source
                     </CustomButton>
                     {

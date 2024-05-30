@@ -4,7 +4,7 @@ import { FaReact } from "react-icons/fa"
 import { IoLogoPwa } from "react-icons/io5";
 import { BiLogoTypescript } from "react-icons/bi";
 import { FaPython } from "react-icons/fa";
-import { SiChakraui } from "react-icons/si";
+import { SiChakraui, SiSqlalchemy, SiSqlite } from "react-icons/si";
 import { FaTelegramPlane } from "react-icons/fa";
 import { FaChrome } from "react-icons/fa6";
 import { FaFirefox } from "react-icons/fa6";
@@ -17,7 +17,9 @@ type AllowedFeature =
     'chakraui' |
     'pwa' |
     'chrome' |
-    'firefox';
+    'firefox' |
+    'sqlite' |
+    'sqlalchemy';
 
 type FeatureComponentInterface = {[key in AllowedFeature]: IconType}
 
@@ -40,7 +42,9 @@ const icons: FeatureComponentInterface = {
     chakraui: SiChakraui,
     pwa: IoLogoPwa,
     chrome: FaChrome,
-    firefox: FaFirefox
+    firefox: FaFirefox,
+    sqlite: SiSqlite,
+    sqlalchemy: SiSqlalchemy,
 }
 
 function sanitizeFeature(name: string): AllowedFeature {
