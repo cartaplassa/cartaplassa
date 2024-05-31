@@ -2,9 +2,9 @@
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
-   width="512.09991"
-   height="512.09998"
-   viewBox="0 0 135.4931 135.49312"
+   width="512"
+   height="512"
+   viewBox="0 0 135.46666 135.46667"
    version="1.1"
    id="svg1"
    xml:space="preserve"
@@ -12,20 +12,15 @@
    xmlns:svg="http://www.w3.org/2000/svg"><defs
      id="defs1" /><g
      id="layer1"><rect
-       style="display:none;fill:#000000;fill-opacity:1;stroke:#ffffff;stroke-width:0.0264531;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4.7;stroke-dasharray:none;paint-order:stroke fill markers"
+       style="fill:#000000;fill-opacity:1;stroke:#ffffff;stroke-width:0.0264531;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4.7;stroke-dasharray:none;paint-order:stroke fill markers"
        id="rect6"
        width="135.44022"
        height="135.44022"
        x="0.013226567"
-       y="0.013226567" /><circle
-       style="fill:#000000;fill-opacity:1;stroke:#ffffff;stroke-width:0.0264583;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4.7;stroke-dasharray:none;paint-order:stroke fill markers"
-       id="path6"
-       cx="67.746559"
-       cy="67.746559"
-       r="67.73333" /><g
+       y="0.013226567" /><g
        style="fill:#cc2630;fill-opacity:1"
        id="g2"
-       transform="matrix(0.41984888,0,0,0.41984888,5.3857745,5.3859846)"><g
+       transform="matrix(0.33027628,0,0,0.33027628,18.687306,18.687471)"><g
          id="g5"
          style="fill:#cc2630;fill-opacity:1">
 	<path
