@@ -1,36 +1,12 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
-import { VitePWA } from 'vite-plugin-pwa'
-import tsconfigPaths from 'vite-tsconfig-paths'
+import { defineConfig } from "vite";
+import react from "@vitejs/plugin-react";
+import { VitePWA } from "vite-plugin-pwa";
+import tsconfigPaths from "vite-tsconfig-paths";
 
-let faviconURL = '/favicon.svg'
-
-
+let faviconURL = "/favicon.svg";
 
 // https://vitejs.dev/config/
 export default defineConfig({
   base: "/cartaplassa",
-  plugins: [
-    react(),
-    tsconfigPaths(),
-    VitePWA({
-      includeAssets: [faviconURL],
-      manifest: {
-        theme_color: '#ffffff',
-        icons: [
-          {
-            src: faviconURL,
-            sizes: '512x512',
-            type: 'image/svg+xml',
-            purpose: 'any maskable'
-          },
-          {
-            src: faviconURL,
-            sizes: '512x512',
-            type: 'image/png',
-          }
-        ]
-      },
-    })
-  ]
-})
+  plugins: [react(), tsconfigPaths()],
+});
