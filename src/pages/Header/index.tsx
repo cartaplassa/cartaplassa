@@ -3,7 +3,6 @@ import Feature from "@components/Feature";
 import CustomButton from "@components/CustomButton";
 import { IoChatbubblesOutline } from "react-icons/io5";
 
-
 const Navbar = () => {
   return (
     <nav className="navbar wrapper">
@@ -31,7 +30,9 @@ const Header = () => {
         <div className="header__intro">
           <h1>Cartaplassa</h1>
           <p>Andrey&nbsp;Filippov, React&nbsp;developer</p>
-          <CustomButton link='#contacts'><IoChatbubblesOutline /> DM me :3</CustomButton>
+          <CustomButton link="#contacts">
+            <IoChatbubblesOutline /> Write me
+          </CustomButton>
         </div>
       </div>
     </div>

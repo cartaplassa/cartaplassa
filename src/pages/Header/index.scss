@@ -1,8 +1,6 @@
 .header {
-  background: linear-gradient(
-    rgba(0, 0, 0, 0.6), 
-    rgba(0, 0, 0, 0.4)
-  ), url("./header.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3)),
+    url("./header.jpg");
   height: 100vh;
   background-size: cover;
   background-position: center;
@@ -28,11 +26,11 @@
   }
 
   @media (min-width: 700px) {
-      justify-content: flex-end;
-      align-items: center;
-      gap: 3.75em;
-      height: 6em;
-      padding: 3em
+    justify-content: flex-end;
+    align-items: center;
+    gap: 3.75em;
+    height: 6em;
+    padding: 3em;
   }
 }
 
@@ -49,30 +47,30 @@
   align-items: center;
 
   @media (min-width: 1400px) {
-      justify-content: flex-start;
+    justify-content: flex-start;
   }
 }
 
 .header__intro .btn {
-  margin-top: .5em;
+  margin-top: 0.5em;
 }
 
 .navbar__link {
   position: relative;
   display: inline-block;
-  padding: .5rem 0;
+  padding: 0.5rem 0;
   text-decoration: none;
   color: inherit;
-  transition: all .2s;
+  transition: all 0.2s;
 
   &::after {
-    content: '';
+    content: "";
     position: absolute;
     bottom: 0;
     left: 0;
     right: 100%;
     display: inline-block;
-    height: 1rem;
+    height: 0.1em;
     background: var(--white);
     transition: all 0.25s cubic-bezier(1, 0.68, 0.16, 0.9);
   }
